@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 const schedule = {
-  title: "CS Courses for 2020-2021"
+  title: "CS Courses for 2020 - 2021"
 };
 
 const App = () => {
