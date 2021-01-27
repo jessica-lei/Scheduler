@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   bannerStyle: {
     color: '#888',
     fontSize: 32,
+    marginTop: 10,
   },
 });
 
