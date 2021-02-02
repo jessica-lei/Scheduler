@@ -7,7 +7,7 @@ import { getCourseTerm, terms } from '../utils/course';
 
 
 
-const CourseList = ({ courses }) => {
+const CourseList = ({ courses, view }) => {
   const [selectedTerm, setSelectedTerm] = useState('Fall');
 
 
@@ -19,7 +19,7 @@ const CourseList = ({ courses }) => {
       <View style={{flex: 1, flexDirection: 'row'}}>
         <TermSelector terms={terms} selectedTerm={selectedTerm} setSelectedTerm = {setSelectedTerm}/>
       </View>
-      <CourseSelector courses={termCourses} />
+      <CourseSelector courses={termCourses} view={view}/>
     </ScrollView>
     /*
     <View style={styles.courseList}>{ termCourses.map(course => <Course key={course.id} course={course} />) }

@@ -4,7 +4,7 @@ import { hasConflict } from '../utils/course';
 import Course from './Course';
 import TermSelector from './TermSelector';
 
-const CourseSelector = ({courses}) => {
+const CourseSelector = ({ courses, view }) => {
   const [selected, setSelected] = useState([]);
 
   const toggle = course => setSelected(selected => (
@@ -19,6 +19,7 @@ const CourseSelector = ({courses}) => {
           isSelected={selected.includes(course)}
           select={toggle}
           isDisabled={hasConflict(course, selected)}
+          view={view}
           />
         )
       }
