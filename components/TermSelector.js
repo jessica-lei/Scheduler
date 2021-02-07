@@ -29,18 +29,19 @@ const termButtonBase = {
   justifyContent: 'center',
   alignItems: 'center',
   margin: 10,
-  height: 40,
+  height: 50,
   padding: 10,
-  minWidth: 90,
-  maxWidth: 90,
+  minWidth: 110,
+  maxWidth: 110,
 };
 
 const styles = StyleSheet.create({
   termSelector: {
-    flex: 1,
+    //flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
-    width: 350,
+    //alignContent: "center",
+    width: 450,
   },
   termButton: {
     ...termButtonBase,
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
   },
   termText: {
     color: '#fff',
-    fontSize: 15,
+    fontSize: 16,
   },
 });
 

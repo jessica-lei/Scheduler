@@ -16,7 +16,7 @@ const CourseList = ({ courses, view }) => {
 
   return(
     <ScrollView>
-      <View style={{flex: 1, flexDirection: 'row'}}>
+      <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
         <TermSelector terms={terms} selectedTerm={selectedTerm} setSelectedTerm = {setSelectedTerm}/>
       </View>
       <CourseSelector courses={termCourses} view={view}/>

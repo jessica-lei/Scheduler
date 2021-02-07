@@ -21,10 +21,10 @@ const courseButtonBase = {
   justifyContent: 'center',
   alignItems: 'center',
   margin: 10,
-  height: 60,
+  height: 80,
   padding: 10,
-  minWidth: 90,
-  maxWidth: 90,
+  minWidth: 110,
+  maxWidth: 110,
 };
 
 const styles = StyleSheet.create({
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   courseText: {
     color: '#fff',
-    fontSize: 12,
+    fontSize: 14,
     textAlign: 'center'
   }
 });
